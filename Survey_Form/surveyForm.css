@@ -1,0 +1,61 @@
+body#bootstrap-override{
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  background-color:#1B5369;
+	color: white;
+}
+
+div.form-group{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.commentBox > textarea{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  color: black;
+}
+div#radioButtonlabel, .radioButtons{
+	margin-top: 20px;
+}
+
+div.page-header{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.commentHeader{
+	text-align: center;
+}
+
+div#chkBox_header > label{
+	margin-top: 20px;
+ 
+}
+
+div.radioButtons,.textComments{
+	margin-top: 45px;
+}
+
+div.submitButton{
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+button.btn{
+	width: 100%;
+}
+
+#validationLogo{
+	margin-top: 25px;
+}
+
+div.form-group > label#dropdownMenu2{
+  margin-top: 40px;
+}
+

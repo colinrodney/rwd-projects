@@ -1,0 +1,54 @@
+
+body{
+
+}
+h1.moveMe{
+	padding-top:35px;
+}
+
+div#video-section{
+	/*CREATES/ELIMINATES SPACE BETWEEN ELEMENTS AT THE TOP*/
+	margin-top: -1rem; 
+}
+/*
+div#inputEmail, #inputSubmit{
+	width: 90%;
+	margin-left: auto;
+} */
+div#aboardHeader h3{
+	background-color: #212529;
+    color: white;
+    margin-bottom: -1px;
+}
+
+#trainImage{
+	height: 100vh;
+	background-attachment: fixed;
+	background-image: url("https://source.unsplash.com/zpzSE-Padr4");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+div.jumbotron ul> li{
+	list-style: none;
+	margin-bottom: 5px;
+}
+
+div#contactContent{
+	text-align: center;
+}
+div#inputEmail, div#inputSubmit{
+	text-align: center;
+}
+ul a:hover{
+	background: #f2f2f2;
+	color: #f2f2f2;
+}
+
+#validationLink{
+	text-align: center;
+	padding: 15px;
+}
+
