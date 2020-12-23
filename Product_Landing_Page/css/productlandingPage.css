@@ -1,0 +1,112 @@
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root{
+	--dark-primary-color: #002436;
+	--light-primary-color: #f1f1f1;
+	--light-text-color: #fff;
+	--dark-text-color: #333;
+	--main-content-padding: 2.5%;
+	/* --width: 80%; */
+}
+
+
+.navbar-color{
+	background: var(--dark-primary-color);
+}
+
+.navbar-nav{
+	margin-left: 65%;
+}
+
+
+
+#trainImage{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 2.5%;
+	/* align-items: center; */
+}
+
+#trainImage{
+	color: var(--light-text-color);
+}
+
+/* CALL-TO-ACTION BUTTON*/
+#trainImage a{
+	/* background: var(--primary-color); */
+	width: 20%;
+}
+
+/* ABOUT AMTRAK */
+#aboutAmtrak{
+	background: var(--light-primary-color);
+	/* color: var(--dark-text-color); */
+	height: 60vh;
+	padding: 2.5%;
+}
+
+#aboutAmtrack p{
+	color: var(--dark-primary-color);
+}
+
+/* CONTACT US */
+#contactUs{
+	background: var(--dark-primary-color);
+	color: var(--light-text-color);
+	padding: var(--main-content-padding);
+}
+
+li{
+	list-style-type: none;
+}
+
+div#video-section{
+	/*CREATES/ELIMINATES SPACE BETWEEN ELEMENTS AT THE TOP*/
+	margin-top: -1rem; 
+}
+/*
+div#inputEmail, #inputSubmit{
+	width: 90%;
+	margin-left: auto;
+} */
+div#aboardHeader h3{
+	background-color: #212529;
+    color: white;
+    margin-bottom: -1px;
+}
+
+#trainImage{
+	height: 100vh;
+	background-attachment: fixed;
+	background: url("../images/train_on_track.jpg") no-repeat center center/cover;
+	object-fit: cover;
+}
+
+
+div.jumbotron ul> li{
+	list-style: none;
+	margin-bottom: 5px;
+}
+
+div#contactContent{
+	text-align: center;
+}
+div#inputEmail, div#inputSubmit{
+	text-align: center;
+}
+ul a:hover{
+	background: #f2f2f2;
+	color: #f2f2f2;
+}
+
+#validationLink{
+	text-align: center;
+	padding: 15px;
+}
+

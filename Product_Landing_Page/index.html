@@ -8,83 +8,79 @@
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-	<link rel="stylesheet" type="text/css" href="productlandingPage.css">
+	<link rel="stylesheet" type="text/css" href="css/productlandingPage.css">
+
+	<!-- mobile styles -->
+	<link rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
-	<div id="header-section">
-		<header id="header">
-			<nav id="nav-bar" class="navbar topnav fixed-top navbar-expand-md navbar-light bg-light">
-		  		<a class="navbar-brand" href="#"><img src="
-				https://seeklogo.com/images/A/Amtrak-logo-121483F660-seeklogo.com.png" width="100" height="40" id="header-img" alt="img"></a>
-		  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-  				</button>
-  				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				    <ul class="navbar-nav ml-auto justify-content-center">
-				      <li class="nav-item active">
-				        <a class="nav-link" href="#aboutAmtrak">About Amtrak<span class="sr-only">(current)</span></a>
-				      </li>
-				      <li class="nav-item">
-				        <a class="nav-link" href="#contactUs">Contact Us</a>
-				      </li>
-				      <li class="nav-item">
-				        <a class="nav-link" href="#aboardTrain">Aboard the Train</a>
-				      </li>
-				    </ul>
+	<!-- navbar -->
+	<header id="header-section">
+		<nav class="navbar navbar-expand-lg navbar-color">
+				<div class="container">
+					<!-- brand logo -->
+					<a class="navbar-brand" href="#">
+						<img src="images/amtrak_logo_updated_resized.jpg" alt="amtrakLogo">
+					</a>
+					<div class="collapse navbar-collapse navbar-color" id="mainNavbar">
+						<div class="navbar-nav">
+							<a class="nav-link active" aria-current="page" href="#">About Amtrak</a>
+							<a class="nav-link" href="#">On The Train</a>
+							<a class="nav-link" href="#">Contact Us</a>
+						</div>
+					</div>
 				</div>
- 			</nav>
-		</header>
-	</div>
-
-	<!--image-->
-	<div id="trainImage">
-		img of train
-	</div>
-
-	<!--Jumbotron and Content Area-->
-	<div id="jumbotron-section">
-		<div class="jumbotron">
-		  <h1 class="display-4 moveMe">Adventures Await...</h1>
-		  <p class="lead">This is a mockup version of amtrak.com we're ready to help you explore every part of it!
-		 	From the soulful sounds of Bourbon Street in New Orleans to the Magnificent Mile along Michigan Avenue in Chicago or from the stardom of Hollywood to the Avenue of the Americas in New York City.
-		 	Amtrak's got you covered!</p>
-		  <hr class="my-4">
-		  <h3>
-		  	Click the button below for informration on routes and destinations!
-		  </h3>
-		  <a class="btn btn-primary btn-lg" href="https://www.amtrak.com/routes" target="_blank">Routes &#38; Destinations</a>
+		</nav>
+		<!--image-->
+		<div id="trainImage">
+			<h1 class="display-4 light-text-color">Adventures Await...</h1>
+			<p class="lead light-text-color">This is a mockup version of amtrak.com we're ready to help you explore every part of it!
+				From the soulful sounds of Bourbon Street in New Orleans to the Magnificent Mile along Michigan Avenue in Chicago or
+				from the stardom of Hollywood to the Avenue of the Americas in New York City.
+				Amtrak's got you covered!</p>
+				<a class="btn btn-primary btn-lg" href="https://www.amtrak.com/routes" target="_blank">Routes &#38; Destinations</a>
 		</div>
-	</div>
-	<div id="aboutAmtrak">
-		<div class="jumbotron">
-		  <h1 class="display-4 moveMe">All About Amtrak</h1>
+	</header>	
+
+	<!-- About Amtrak -->
+	<section id="aboutAmtrak">
+		<div class="jumbotron-fluid">
+		  <h1 class="display-4">About Amtrak</h1>
 		  <hr class="my-4">
 		  <p>The National Railroad Passenger Corporation, doing business as Amtrak, is a passenger railroad service that provides medium- and long-distance intercity service in the contiguous United States and to nine Canadian cities.</p>
 		  <a class="btn btn-primary btn-lg" href="https://en.wikipedia.org/wiki/Amtrak" target="_blank" role="button">Learn more</a>
 		</div>
-	</div>
-	<div id="contactUs">
-		<div class="jumbotron">
+	</section>
+
+	<!-- Contact Us -->
+	<section id="contactUs">
+		<div class="jumbotron-fluid">
 			<div id="contactContent">
 			  <h1 class="display-4 moveMe">We'd Love to Hear From You!</h1>
 			  <p class="lead">How are we doing? Whether good or not-so-good, Please let us know. We are always working to create a better experience for you!</p>
 			  <hr class="my-4">
-			   	<ul>
-			  		<li>Lorem Ipsum</li>
-			  		<li>Lorem Ipsum</li>
-			  		<li>Lorem Ipsum</li>
-			  	</ul>
 			</div>
-		  <form id="form" action=" https://www.freecodecamp.com/email-">
-		  	<div id="inputEmail">
-		  		<input id="email" type="email" name="email" placeholder="Email Address">
-		  	</div>
-		  	<div id="inputSubmit">
-		  		<input id="submit" type="submit" value="Request Info">
-		  	</div>
-		  </form>
+			<!-- CONTACT FORM -->
+			<form>
+				<div class="mb-3">
+					<label for="exampleInputEmail1" class="form-label">Email address</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+					<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+				</div>
+				<div class="mb-3">
+					<label for="exampleInputPassword1" class="form-label">Password</label>
+					<input type="password" class="form-control" id="exampleInputPassword1">
+				</div>
+				<div class="mb-3">
+					<p>
+						<label for="comments">Comments</label>
+					</p>
+					<textarea name="comments" id="comments" cols="60" rows="10"></textarea>
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
 		</div>
-	</div>
+	</section>
 	<div id="aboardTrain">
 		<div id="aboardHeader">
 			<h3>Ever wonder what it's like aboard one of our trains? Take a look at the video below for a better idea!</h3>
