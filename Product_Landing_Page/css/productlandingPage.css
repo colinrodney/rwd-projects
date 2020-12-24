@@ -1,4 +1,4 @@
-
+/* 
 *{
 	box-sizing: border-box;
 	margin: 0;
@@ -6,25 +6,41 @@
 }
 
 :root{
-	--dark-primary-color: #002436;
-	--light-primary-color: #f1f1f1;
+	--dark-primary-background: #002436;
+	--light-primary-background: #f1f1f1;
 	--light-text-color: #fff;
 	--dark-text-color: #333;
 	--main-content-padding: 2.5%;
 	/* --width: 80%; */
+
+
+
+
+
+
+/* navbar */
+.navbar-dark{
+	background: var(--dark-primary-background);
 }
 
-
-.navbar-color{
-	background: var(--dark-primary-color);
+.navbar .collapse ul{
+	display: flex;
+	/* flex-direction: column; */
 }
 
-.navbar-nav{
-	margin-left: 65%;
+/* .navbar .collapse .first-link{
+	margin-left: 60vw;
+}
+.navbar .collapse a{
+	margin-left: 55px;
+} */
+
+ul a:hover{
+	border-bottom: 1px solid #f2f2f2;
+	color: #f2f2f2;
 }
 
-
-
+/* main image */
 #trainImage{
 	display: flex;
 	flex-direction: column;
@@ -57,7 +73,7 @@
 
 /* CONTACT US */
 #contactUs{
-	background: var(--dark-primary-color);
+	background: var(--dark-primary-background);
 	color: var(--light-text-color);
 	padding: var(--main-content-padding);
 }
@@ -66,44 +82,37 @@ li{
 	list-style-type: none;
 }
 
+div#contactContent{
+	text-align: center;
+}
+
+
+/* videos section */
 div#video-section{
 	/*CREATES/ELIMINATES SPACE BETWEEN ELEMENTS AT THE TOP*/
 	margin-top: -1rem; 
 }
-/*
-div#inputEmail, #inputSubmit{
-	width: 90%;
-	margin-left: auto;
-} */
-div#aboardHeader h3{
-	background-color: #212529;
-    color: white;
-    margin-bottom: -1px;
-}
+
+
+
 
 #trainImage{
 	height: 100vh;
 	background-attachment: fixed;
-	background: url("../images/train_on_track.jpg") no-repeat center center/cover;
+	background: 
+	linear-gradient(rgba(123,123,123,0.2), black),
+	url("../images/train_on_track.jpg") no-repeat center center/cover;
 	object-fit: cover;
 }
 
 
-div.jumbotron ul> li{
-	list-style: none;
-	margin-bottom: 5px;
+/* footer */
+#main-footer{
+	background: var(--dark-primary-background);
+	height: 30vh;
 }
 
-div#contactContent{
-	text-align: center;
-}
-div#inputEmail, div#inputSubmit{
-	text-align: center;
-}
-ul a:hover{
-	background: #f2f2f2;
-	color: #f2f2f2;
-}
+/* validation link */
 
 #validationLink{
 	text-align: center;
