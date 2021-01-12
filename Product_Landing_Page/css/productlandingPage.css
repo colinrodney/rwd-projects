@@ -1,21 +1,9 @@
-/* 
-*{
+
+	*{
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
-
-:root{
-	--dark-primary-background: #002436;
-	--light-primary-background: #f1f1f1;
-	--light-text-color: #fff;
-	--dark-text-color: #333;
-	--main-content-padding: 2.5%;
-	/* --width: 80%; */
-
-
-
-
 
 
 /* navbar */
@@ -23,21 +11,9 @@
 	background: var(--dark-primary-background);
 }
 
-.navbar .collapse ul{
-	display: flex;
-	/* flex-direction: column; */
-}
-
-/* .navbar .collapse .first-link{
-	margin-left: 60vw;
-}
-.navbar .collapse a{
-	margin-left: 55px;
-} */
-
 ul a:hover{
 	border-bottom: 1px solid #f2f2f2;
-	color: #f2f2f2;
+	color: var(--dark-text-color);
 }
 
 /* main image */
@@ -60,37 +36,60 @@ ul a:hover{
 }
 
 /* ABOUT AMTRAK */
+#aboutAmtrak .container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 #aboutAmtrak{
 	background: var(--light-primary-color);
 	/* color: var(--dark-text-color); */
+	width: 100%;
 	height: 60vh;
 	padding: 2.5%;
 }
 
-#aboutAmtrack p{
+#aboutAmtrak p{
 	color: var(--dark-primary-color);
 }
 
-/* CONTACT US */
+/* CONTACT US section */
 #contactUs{
 	background: var(--dark-primary-background);
 	color: var(--light-text-color);
 	padding: var(--main-content-padding);
 }
 
+#contactUs .container{
+	display: flex;
+	flex-direction: column;
+	/* order: 4; */
+	/* border: 1px solid gold; */
+	width: 90%;
+}
+
+#contactUs form, textarea,
+#contactUs button{
+	width: 100%;
+}
+
 li{
 	list-style-type: none;
 }
 
-div#contactContent{
+div#contactHeader{
 	text-align: center;
 }
 
 
-/* videos section */
-div#video-section{
-	/*CREATES/ELIMINATES SPACE BETWEEN ELEMENTS AT THE TOP*/
-	margin-top: -1rem; 
+/* aboard train section/ Amtrak Experience*/
+#aboardTrain{
+	background: var(--dark-primary-background);
+	color: var(--light-text-color);
+	display: flex;
+	flex-direction: column;
+	/* order: 3; */
 }
 
 
@@ -108,8 +107,8 @@ div#video-section{
 
 /* footer */
 #main-footer{
-	background: var(--dark-primary-background);
-	height: 30vh;
+	background: #42525a;
+	height: 45vh;
 }
 
 /* validation link */

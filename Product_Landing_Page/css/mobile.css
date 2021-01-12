@@ -1,3 +1,4 @@
+
 /* reset */
 *{
   box-sizing: border-box;
@@ -5,28 +6,26 @@
   padding: 0;
 }
 
-/* variables */
+/* css variables */
 :root{
   --dark-primary-background: #002436;
   --light-primary-background: #f1f1f1;
   --light-text-color: #fff;
   --dark-text-color: #333;
   --main-content-padding: 2.5%;
-  /* --width: 80%; */
 }
 
-
-
+/* nav link hover effect */
+ul a:hover{
+	border-bottom: 1px solid #f2f2f2;
+  /* background-color: #f2f2f2; */
+  color: var(--dark-text-color);
+}
 
 /* ABOUT AMTRAK */
 #aboutAmtrak{
 	height: 70vh;
 	padding: 2.5%;
-}
-
-/* contactUs section */
-#contactUs form input, textarea{
-  width: 100%;
 }
 
 /* aboard train section */
