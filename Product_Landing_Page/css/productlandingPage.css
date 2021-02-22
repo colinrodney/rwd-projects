@@ -1,120 +1,112 @@
-
-	*{
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
 
 /* navbar */
-.navbar-dark{
-	background: var(--dark-primary-background);
+.navbar-dark {
+  background: var(--dark-primary-background);
 }
 
-ul a:hover{
-	border-bottom: 1px solid #f2f2f2;
-	color: var(--dark-text-color);
+ul a:hover {
+  border-bottom: 1px solid #f2f2f2;
+  color: var(--dark-text-color);
 }
 
 /* main image */
-#trainImage{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding: 0 2.5%;
-	/* align-items: center; */
+#trainImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2.5%;
+  /* align-items: center; */
 }
 
-#trainImage{
-	color: var(--light-text-color);
+#trainImage {
+  color: var(--light-text-color);
 }
 
 /* CALL-TO-ACTION BUTTON*/
-#trainImage a{
-	/* background: var(--primary-color); */
-	width: 20%;
+#trainImage a {
+  /* background: var(--primary-color); */
+  width: 20%;
 }
 
 /* ABOUT AMTRAK */
-#aboutAmtrak .container{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+#aboutAmtrak .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#aboutAmtrak{
-	background: var(--light-primary-color);
-	/* color: var(--dark-text-color); */
-	width: 100%;
-	height: 60vh;
-	padding: 2.5%;
+#aboutAmtrak {
+  background: var(--light-primary-color);
+  /* color: var(--dark-text-color); */
+  width: 100%;
+  height: 60vh;
+  padding: 2.5%;
 }
 
-#aboutAmtrak p{
-	color: var(--dark-primary-color);
+#aboutAmtrak p {
+  color: var(--dark-primary-color);
 }
 
 /* CONTACT US section */
-#contactUs{
-	background: var(--dark-primary-background);
-	color: var(--light-text-color);
-	padding: var(--main-content-padding);
+#contactUs {
+  background: var(--dark-primary-background);
+  color: var(--light-text-color);
+  padding: var(--main-content-padding);
 }
 
-#contactUs .container{
-	display: flex;
-	flex-direction: column;
-	/* order: 4; */
-	/* border: 1px solid gold; */
-	width: 90%;
+#contactUs .container {
+  display: flex;
+  flex-direction: column;
+  /* order: 4; */
+  /* border: 1px solid gold; */
+  width: 90%;
 }
 
-#contactUs form, textarea,
-#contactUs button{
-	width: 100%;
+#contactUs form,
+textarea,
+#contactUs button {
+  width: 100%;
 }
 
-li{
-	list-style-type: none;
+li {
+  list-style-type: none;
 }
 
-div#contactHeader{
-	text-align: center;
+div#contactHeader {
+  text-align: center;
 }
-
 
 /* aboard train section/ Amtrak Experience*/
-#aboardTrain{
-	background: var(--dark-primary-background);
-	color: var(--light-text-color);
-	display: flex;
-	flex-direction: column;
-	/* order: 3; */
+#aboardTrain {
+  background: var(--dark-primary-background);
+  color: var(--light-text-color);
+  display: flex;
+  flex-direction: column;
+  /* order: 3; */
 }
 
-
-
-
-#trainImage{
-	height: 100vh;
-	background-attachment: fixed;
-	background: 
-	linear-gradient(rgba(123,123,123,0.2), black),
-	url("../images/train_on_track.jpg") no-repeat center center/cover;
-	object-fit: cover;
+#trainImage {
+  height: 100vh;
+  background-attachment: fixed;
+  background: linear-gradient(rgba(123, 123, 123, 0.2), black),
+    url("../images/train_on_track.jpg") no-repeat center center/cover;
+  object-fit: cover;
 }
-
 
 /* footer */
-#main-footer{
-	background: #42525a;
-	height: 45vh;
+#main-footer {
+  background: #42525a;
+  /* height: 45vh; */
 }
 
 /* validation link */
 
-#validationLink{
-	text-align: center;
-	padding: 15px;
+#validationLink {
+  text-align: center;
+  padding: 15px;
 }
-

@@ -1,13 +1,12 @@
-
 /* reset */
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 /* css variables */
-:root{
+:root {
   --dark-primary-background: #002436;
   --light-primary-background: #f1f1f1;
   --light-text-color: #fff;
@@ -16,67 +15,76 @@
 }
 
 /* nav link hover effect */
-ul a:hover{
-	border-bottom: 1px solid #f2f2f2;
+ul a:hover {
+  border-bottom: 1px solid #f2f2f2;
   /* background-color: #f2f2f2; */
   color: var(--dark-text-color);
 }
 
 /* ABOUT AMTRAK */
-#aboutAmtrak{
-	height: 70vh;
-	padding: 2.5%;
+#aboutAmtrak {
+  height: 70vh;
+  padding: 2.5%;
 }
 
 /* aboard train section */
-#aboardTrain h2{
+#aboardTrain h2 {
   text-align: center;
   margin-bottom: 2.5rem;
 }
 
 /* footer */
-#main-footer{
+#main-footer {
   background: var(--dark-primary-background);
   color: var(--light-text-color);
   height: 30vh;
   text-align: center;
 }
-#main-footer p{
+#main-footer p {
   font-size: 1.2rem;
 }
-#main-footer i{
+#main-footer i {
   margin: 5%;
 }
 
 /* train image */
-#trainImage h1{
+#trainImage h1 {
   margin-top: -4.5rem;
 }
 
-#trainImage p{
+#trainImage p {
   padding: 0 5px;
 }
-#trainImage .btn{
+#trainImage .btn {
   width: 100%;
 }
 
+#pricing {
+  background: url(../images/under-construction-min.jpg) no-repeat center
+    center/cover;
+  width: 100vw;
+  height: 70vh;
+}
+
 /* mobile screens: landscape mode */
-@media screen and (max-height: 576px){
+@media screen and (max-height: 576px) {
   /* about amtrak */
-  #aboutAmtrak p{
-    display: none;
+  #aboutAmtrak .lead {
+    font-size: 1.5rem;
   }
+  /* #aboutAmtrak hr {
+    display: hidden;
+  } */
 
   /* train image */
-    #trainImage h1{
+  #trainImage h1 {
     margin-top: -1.2rem;
     font-size: 3.1rem;
   }
 
   /* footer */
-#main-footer{
-	background: var(--dark-primary-background);
-	height: 60vh;
+  #main-footer {
+    background: var(--dark-primary-background);
+    height: 60vh;
+  }
 }
-}
-
