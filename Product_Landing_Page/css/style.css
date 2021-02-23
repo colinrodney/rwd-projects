@@ -14,6 +14,13 @@
   --main-content-padding: 2.5%;
 }
 
+/*utility classes */
+
+/* all paragraphs w/ lead class */
+p.lead {
+  font-size: 3rem;
+}
+
 /* navbar */
 .navbar-dark {
   background: var(--dark-primary-background);
@@ -144,7 +151,7 @@ ABOUT AMTRAK */
   background: url(../images/under-construction-min.jpg) no-repeat center
     center/cover;
   width: 100vw;
-  height: 70vh;
+  height: 50vh;
 }
 
 /* validation link */
@@ -159,6 +166,14 @@ ABOUT AMTRAK */
   #main-footer {
     height: 50vh;
     background: #42525a;
+  }
+
+  /* pricing */
+  #pricing {
+    /* background: url(../images/under-construction-min.jpg) no-repeat center
+    center/cover; */
+    width: 100vw;
+    height: 100vh;
   }
 }
 
