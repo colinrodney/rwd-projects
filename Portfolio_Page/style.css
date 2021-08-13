@@ -19,14 +19,28 @@ body {
   width: 100%;
 }
 
-/* HERO IMAGE */
+/* HEADER */
+#header {
+  position: relative;
+}
+
+/* HERO IMAGE + HERO IMAGE TEXT OVERLAY */
 .hero {
   width: 100%;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 72%;
+  color: #fff;
+  width: 50%;
+  margin: 0 1rem;
 }
 
 /* WELCOME SECTION */
 #welcome-section {
   height: 100%;
+  padding: 1rem;
   background: var(--lightgray);
 }
 
@@ -36,6 +50,7 @@ body {
 
 /* PROJECTS SECTION */
 #projects {
+  padding: 1rem;
   background: var(--slightly-less-lightgray);
 }
 
