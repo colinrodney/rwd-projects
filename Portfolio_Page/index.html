@@ -16,7 +16,12 @@
     />
 
     <!--BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
 
     <!--Local CSS-->
     <link rel="stylesheet" href="style.css" />
@@ -26,125 +31,153 @@
 
   <body>
     <!-- Navigation -->
-    <nav id="navbar" class='nav sticky'>
-        <p class='logo'>CR</p>
-        <ul>
-          <li class="current"><a id="profile-link" target="_blank" href="https://github.com/colinrodney">Github</a></li>
-          <li class="current"><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
-          <li class="current"><a href="#projects"><i class="fas fa-briefcase"></i>My Work</a></li>
-          <!-- <li class="current"><a target="_blank" href="https://colinrodney.github.io/resume/"><i class="fas fa-file"></i>Resume</a></li> -->
-          <li class="current"><a href="contact.html"><i class="fas fa-play"></i>Contact</a></li>
-        </ul>
-      </nav>
+    <nav
+      id="navbar"
+      class="navbar navbar-dark bg-custom navbar-expand-md nav sticky"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="current">
+              <a
+                id="profile-link"
+                target="_blank"
+                href="https://github.com/colinrodney"
+                >Github</a
+              >
+            </li>
+            <li class="current">
+              <a href="index.html">Home</a>
+            </li>
 
-    <!-- MAIN CONTENT -->
-    <div id="header-home">
-      <!-- <img class="hero" src="https://source.unsplash.com/Q1p7bh3SHj8" alt=""> -->
-      <img class="hero" src="images/coding.jpg" alt="coding" srcset="">
-      <div class=" header-content hero-text">
-        <p class="lead">C. Renauld Rodney</p>
-        <small class='tagline'>Lets Build Something</small>
+            <li class="current">
+              <a href="#projects">My Work</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <!-- <div class="header-content"></div> -->
-    </div>
-    <!-- END HEADER -->
+    </nav>
+    <!-- END ORIGINAL NAV -->
 
-    <!-- ABOUT INTEGRATION SECTION: 1 -->
+    <!-- WELCOME SECTION -->
     <section id="welcome-section">
-      <h1 class="py-3 text-center">Allow Me to Introduce Myself...</h1>
-      <div class="container welcome">
-        <div id="img">
-          <img src="img/personal_pic.jpg" alt="colin-rodney" />
-        </div>
-        <div id="info">
-          <p>
-            My name is Colin Rodney (i'm sure you knew that by now..sheesh). I'm currently employed by one of the largest communications companies in the United States as a Customer Support Specialist. I'm tasked with troubleshooting, testing and  resolving issues related to our clients mobile network services and/or their mobile devices.
-          </p>
-          <p>
-            Fueled by a passion for understanding the "how" and "why" of a problem, 
-            my self-taught programming journey began in 2018 when I enrolled in a free course offered by my local public library.
-            From there I began consistently working code challenges on various websites and enrolled in self-paced online courses to guide my learning, reinforce learned concepts, and develop my problem solving and coding skills.
-          </p>
-          <p>
-            I'm available for freelance work and am actively seeking an opportunity to use my knowledge of Web Design/ User Interface Design alongside my creative process and problem solving skills to move your project from idea to reality.
-          </p>
-          <p>
-            As a person who is driven by a thirst for knowledge and the determination to succeed, I plan to continue sharpening and refining my existing skills in addition to develping new skills that will allow me to one day compete for senior-level UI role.
-          </p>
-          <p>
-            Reach out to me at c.renauld.rodney@gmail.com or drop me a line using the contact form located on the contact page. Lets connect!
-          </p>
-        </div>
+      <img src="images/coding compressed.jpg" alt="coding" srcset="" />
+      <div class="header-content hero-text">
+        <h1>Colin Rodney</h1>
+        <small class="tagline">Web Designer / UI Designer</small>
       </div>
     </section>
-    <!-- END: ABOUT INTEGRATION SECTION: 1 -->
+    <!-- END WELCOME SECTION -->
 
     <!-- SECTION: Projects -->
-    <!-- PROJECTS / MY WORK -->
-    <section id="projects">
+    <div id="projects">
       <h1 class="text-center">My Work</h1>
-      <p class="lead text-center">HTML/CSS/Bootstrap Projects</p>
+      <p class="lead text-center">Projects</p>
       <div class="container">
-        <div class="row row-cols-md-3">
-
-          <a href="https://colinrodney.github.io/survey-form/" target="_blank">
-            <div class="projects">
-              <div class="project-screenshot">
-                <img
-                  src="images/survey-form-ss.png"
-                  alt="img"
-                />
-              </div>
-              <div class="project-title">
-                <p class="lead text-center">Survey Form</p>
-              </div>
-            </div>
+        <div class="project-card">
+          <a href="https://www.google.com" target="_blank">
+            <p class="project-name">Lorem, ipsum dolor.</p>
           </a>
-          <a href="https://colinrodney.github.io/louisiana/" target="_blank">
-            <div class="projects">
-              <div class="project-screenshot">
-                <!-- <img
-                  src="img/screenshots/html_css/louisiana-culture.jpg"
-                  alt="img"
-                /> -->
-                <img
-                  src="images/tribute-page-ss.png"
-                  alt="img"
-                />
-              </div>
-              <div class="project-title">
-                <p class="lead text-center">Louisiana Culture</p>
-              </div>
+          <div class="row row-cols-sm-2">
+            <img
+              src="images/survey-form-ss-compressed-new.png"
+              alt="card-image"
+            />
+            <div class="d-flex align-items-center project-info">
+              <p class="my-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Inventore in iusto, omnis iure et vero consequatur perferendis
+                quae. Veniam cupiditate unde maxime eum quidem incidunt!
+              </p>
             </div>
-          </a>
-          <a href="https://colinrodney.github.io/louisiana/" target="_blank">
-            <div class="projects">
-              <div class="project-screenshot">
-                <!-- <img
-                  src="img/screenshots/html_css/louisiana-culture.jpg"
-                  alt="img"
-                /> -->
-                <img
-                  src="images/tribute-page-ss.png"
-                  alt="img"
-                />
-              </div>
-              <div class="project-title">
-                <p class="lead text-center">Louisiana Culture</p>
-              </div>
-            </div>
-          </a>
+          </div>
         </div>
-    
-    
-      <!-- END SECTION: Projects -->
+        <div class="project-card">
+          <a href="https://www.google.com" target="_blank">
+            <p class="project-name">Lorem, ipsum dolor.</p>
+          </a>
+          <div class="row row-cols-sm-2">
+            <img src="images/pass-the-message-ss.png" alt="card-image" />
+            <div class="d-flex align-items-center project-info">
+              <p class="my-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Inventore in iusto, omnis iure et vero consequatur perferendis
+                quae. Veniam cupiditate unde maxime eum quidem incidunt!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <a href="https://www.google.com" target="_blank">
+            <p class="project-name">Lorem, ipsum dolor.</p>
+          </a>
+          <div class="row row-cols-sm-2">
+            <img
+              src="images/card-image-compressed-resized.jpg"
+              alt="card-image"
+            />
+            <div class="d-flex align-items-center project-info">
+              <p class="my-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Inventore in iusto, omnis iure et vero consequatur perferendis
+                quae. Veniam cupiditate unde maxime eum quidem incidunt!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <a href="https://www.google.com" target="_blank">
+            <p class="project-name">Lorem, ipsum dolor.</p>
+          </a>
+          <div class="row row-cols-sm-2">
+            <img
+              src="images/card-image-compressed-resized.jpg"
+              alt="card-image"
+            />
+            <div class="d-flex align-items-center project-info">
+              <p class="my-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Inventore in iusto, omnis iure et vero consequatur perferendis
+                quae. Veniam cupiditate unde maxime eum quidem incidunt!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <a href="https://www.google.com" target="_blank">
+            <p class="project-name">Lorem, ipsum dolor.</p>
+          </a>
+          <div class="row row-cols-sm-2">
+            <img
+              src="images/card-image-compressed-resized.jpg"
+              alt="card-image"
+            />
+            <div class="d-flex align-items-center project-info">
+              <p class="my-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Inventore in iusto, omnis iure et vero consequatur perferendis
+                quae. Veniam cupiditate unde maxime eum quidem incidunt!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END PROJECTS SECTION -->
 
-      <!-- ADD FUNCTIONAL AREAS HERE -->
-      
-      <!-- END FUNCTIONAL AREAS -->
-
-   
-    </section>
+    <!-- PROJECTS / MY WORK -->
 
     <!--FOOTER -->
     <footer id="footer">
@@ -164,7 +197,10 @@
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <!-- BOOTSTRAP JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
