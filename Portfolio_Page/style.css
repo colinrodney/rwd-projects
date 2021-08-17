@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+li {
+  list-style-type: none;
+}
+
 body {
   background: #000;
   height: 100vh;
