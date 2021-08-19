@@ -30,6 +30,10 @@ nav.fixed {
   padding: 1rem;
 }
 
+.navlink-spacing-custom {
+  margin-right: 1rem;
+}
+
 /* WELCOME SECTION */
 /* remove padding from container-fluid */
 .container-fluid {
