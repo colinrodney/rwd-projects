@@ -33,139 +33,71 @@
     <!-- Navigation -->
     <nav
       id="navbar"
-      class="navbar navbar-dark bg-custom navbar-expand-md nav sticky"
+      class="mb-5 fixed navbar navbar-expand-lg navbar-light bg-light"
     >
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Colin Rodney</a>
+        <a class="navbar-brand" href="#">Navbar</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="current">
-              <a
-                id="profile-link"
-                target="_blank"
-                href="https://github.com/colinrodney"
-                >Github</a
-              >
-            </li>
-            <li class="current">
-              <a href="index.html">Home</a>
-            </li>
-
-            <li class="current">
-              <a href="#projects">My Work</a>
-            </li>
-          </ul>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a href="#" class="project-link">link to project</a>
+            <a href="projects">page jump</a>
+            <a href="#" id="profile-link" target="_blank">profile-link</a>
+          </div>
         </div>
       </div>
     </nav>
-    <!-- END ORIGINAL NAV -->
+    <!-- END NAV -->
 
     <!-- WELCOME SECTION -->
-    <section id="welcome-section">
-      <img src="images/coding compressed.jpg" alt="coding" srcset="" />
-      <div class="header-content hero-text">
-        <h1>Colin Rodney</h1>
-        <small class="tagline">Web Designer / UI Designer</small>
+    <main id="welcome-section">
+      <!-- HEADER + IMG -->
+      <div class="container-fluid">
+        <div class="g-0 row">
+          <div class="col-md-6">
+            <img id="header-img" src="images/code.jpg" alt="code" />
+          </div>
+          <div class="header-padding header-text col-md-6">
+            <h1 class="header-margin">lorem ipsum</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+              fuga rerum quod praesentium minus aperiam mollitia ipsum ad. Quasi
+              id ut quam ipsam aliquid eum distinctio, sapiente recusandae aut.
+              Vel beatae ullam rerum error saepe, et illo voluptates ipsa
+              laborum enim modi, dignissimos porro voluptas hic. Minus fugiat
+              repellat voluptatum!
+            </p>
+          </div>
+        </div>
       </div>
-    </section>
-    <!-- END WELCOME SECTION -->
-
-    <!-- SECTION: Projects -->
-    <div id="projects">
-      <h1 class="text-center">My Work</h1>
-      <p class="lead text-center">Projects</p>
-      <div class="container">
-        <div class="project-card">
+      <!-- PROJECTS -->
+      <div id="projects">
+        <h2 class="text-center p-3">projects</h2>
+        <div class="project-tile">
           <a href="https://www.google.com" target="_blank">
-            <p class="project-name">Lorem, ipsum dolor.</p>
+            <p class="project-name text-center text-sm-start">
+              Lorem, ipsum dolor.
+            </p>
           </a>
-          <div class="row row-cols-sm-2">
+          <div class="row row-cols-md-2">
             <img
+              class="project-img"
               src="images/survey-form-ss-compressed-new.png"
               alt="card-image"
             />
             <div class="d-flex align-items-center project-info">
-              <p class="my-3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Inventore in iusto, omnis iure et vero consequatur perferendis
-                quae. Veniam cupiditate unde maxime eum quidem incidunt!
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="project-card">
-          <a href="https://www.google.com" target="_blank">
-            <p class="project-name">Lorem, ipsum dolor.</p>
-          </a>
-          <div class="row row-cols-sm-2">
-            <img src="images/pass-the-message-ss.png" alt="card-image" />
-            <div class="d-flex align-items-center project-info">
-              <p class="my-3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Inventore in iusto, omnis iure et vero consequatur perferendis
-                quae. Veniam cupiditate unde maxime eum quidem incidunt!
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="project-card">
-          <a href="https://www.google.com" target="_blank">
-            <p class="project-name">Lorem, ipsum dolor.</p>
-          </a>
-          <div class="row row-cols-sm-2">
-            <img
-              src="images/card-image-compressed-resized.jpg"
-              alt="card-image"
-            />
-            <div class="d-flex align-items-center project-info">
-              <p class="my-3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Inventore in iusto, omnis iure et vero consequatur perferendis
-                quae. Veniam cupiditate unde maxime eum quidem incidunt!
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="project-card">
-          <a href="https://www.google.com" target="_blank">
-            <p class="project-name">Lorem, ipsum dolor.</p>
-          </a>
-          <div class="row row-cols-sm-2">
-            <img
-              src="images/card-image-compressed-resized.jpg"
-              alt="card-image"
-            />
-            <div class="d-flex align-items-center project-info">
-              <p class="my-3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Inventore in iusto, omnis iure et vero consequatur perferendis
-                quae. Veniam cupiditate unde maxime eum quidem incidunt!
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="project-card">
-          <a href="https://www.google.com" target="_blank">
-            <p class="project-name">Lorem, ipsum dolor.</p>
-          </a>
-          <div class="row row-cols-sm-2">
-            <img
-              src="images/card-image-compressed-resized.jpg"
-              alt="card-image"
-            />
-            <div class="d-flex align-items-center project-info">
-              <p class="my-3">
+              <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Inventore in iusto, omnis iure et vero consequatur perferendis
                 quae. Veniam cupiditate unde maxime eum quidem incidunt!
@@ -174,24 +106,22 @@
           </div>
         </div>
       </div>
-    </div>
-    <!-- END PROJECTS SECTION -->
+      <!--FOOTER -->
+      <div id="footer" class="p-3">
+        <ul>
+          <li class="ms-5">
+            <p class="footer-lead">Rodney Web Design</p>
+            <small>&copy; 2021 All Rights Reserved</small>
+          </li>
+          <li class="ms-5 mt-4">
+            <i class="fas fa-envelope-open fa-2x"></i>
+            <address>c.renauld.rodney@gmail.com</address>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <!-- END: Main Welcome-Secetion -->
 
-    <!-- PROJECTS / MY WORK -->
-
-    <!--FOOTER -->
-    <footer id="footer" class="p-3">
-      <ul>
-        <li class="ms-5">
-          <p class="footer-lead">Rodney Web Design</p>
-          <small>&copy; 2021 All Rights Reserved</small>
-        </li>
-        <li class="ms-5 mt-4">
-          <i class="fas fa-envelope-open fa-2x"></i>
-          <address>c.renauld.rodney@gmail.com</address>
-        </li>
-      </ul>
-    </footer>
     <!-- SCRIPTS -->
     <!-- FCC TESTS -->
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

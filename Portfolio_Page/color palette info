@@ -1,0 +1,14 @@
+Shadow: #1B2F2C 
+hsla(171,27%,15%,1)
+
+Midtone: #6C6951 
+hsla(53,14%,37%,1)
+***actual value used hsla(53,14%,65%,1);***
+
+Highlight: #55787E or
+ hsla(189,19%,41%,1) - 
+ **actual value hsla(189,40%,80%,1);
+ 
+
+Accent: #789393 
+hsla(180,11%,52%,1)
