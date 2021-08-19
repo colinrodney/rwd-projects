@@ -50,6 +50,11 @@ nav.fixed {
   margin-top: 25%;
 }
 
+/* .header-text {
+  background: hsla(171, 27%, 15%, 1);
+  color: hsla(189, 40%, 80%, 1);
+} */
+
 #welcome-section {
   /* position: relative; */
   /* border: 2px solid red; */
@@ -63,17 +68,27 @@ nav.fixed {
 }
 
 #welcome-section .header-text {
-  background: lightgray;
-  /* color: #fff; */
+  background: hsla(171, 27%, 15%, 1);
+  color: hsla(189, 40%, 80%, 1);
 }
 
 /* PROJECTS SECTION */
 #projects {
-  background: gray;
+  background: hsla(53, 14%, 65%, 1);
 }
 .project-tile {
   padding: 1.5rem;
-  background: lightblue;
+  /* background: lightblue; */
+}
+
+.project-tile a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.project-tile p {
+  /* top/bottom - left/right */
+  margin: 1.5rem 0;
 }
 /* card-image  */
 img {
