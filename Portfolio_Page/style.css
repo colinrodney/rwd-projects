@@ -8,6 +8,10 @@ li {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 :root {
   /* height: 100vh; */
   --shadow: hsla(171, 27%, 15%, 1);
@@ -69,9 +73,14 @@ nav.fixed {
 }
 
 /* PROJECTS SECTION */
+.no-padding {
+  padding: 0;
+}
+
 #projects {
   background: hsla(53deg, 8%, 85%, 1);
-  color: var(--highlight);
+  /* color: var(--highlight); */
+  color: var(--shadow);
 }
 
 .project-tile {
@@ -81,6 +90,7 @@ nav.fixed {
 .project-tile:nth-of-type(odd) {
   /* padding: 1.5rem; */
   background: var(--midtone);
+  background: var(--highlight);
 }
 
 .project-tile:nth-of-type(even) {
@@ -91,7 +101,7 @@ nav.fixed {
 .project-tile a {
   text-decoration: none;
   font-size: 1.5rem;
-  color: var(--highlight);
+  color: var(--shadow);
 }
 
 .project-tile p {
