@@ -11,10 +11,10 @@ li {
 :root {
   /* height: 100vh; */
   --shadow: hsla(171, 27%, 15%, 1);
-  --midtone: hsla(53, 14%, 65%, 1);
-  --highlight: hsla(180, 11%, 52%, 1);
-  --accent: hsla(189, 19%, 41%, 1);
+  --midtone: hsla(180, 11%, 52%, 1);
+  --highlight: hsla(53, 14%, 65%, 1);
   --accent: hsla(189, 40%, 80%, 1);
+  /* --accent: hsla(189, 19%, 41%, 1); */
 }
 
 body {
@@ -74,16 +74,19 @@ nav.fixed {
 
 /* PROJECTS SECTION */
 #projects {
-  background: hsla(53, 14%, 65%, 1);
+  background: hsla(53deg, 8%, 85%, 1);
+  color: var(--highlight);
 }
+
 .project-tile {
   padding: 1.5rem;
-  /* background: lightblue; */
+  background: var(--shadow);
 }
 
 .project-tile a {
   text-decoration: none;
   font-size: 1.5rem;
+  color: var(--highlight);
 }
 
 .project-tile p {

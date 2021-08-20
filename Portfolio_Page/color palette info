@@ -1,5 +1,5 @@
 Shadow: #1B2F2C 
-hsla(171,27%,15%,1)
+hsla(171,27%,15%,1);
 
 Midtone: #6C6951 
 hsla(53,14%,37%,1)
@@ -11,4 +11,7 @@ Highlight: #55787E or
  
 
 Accent: #789393 
-hsla(180,11%,52%,1)
+hsla(180,11%,52%,1);
+
+muted white
+hsla(53deg, 8%, 85%, 1);
