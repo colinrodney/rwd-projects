@@ -38,7 +38,8 @@ body {
 }
 
 #navbar a {
-  color: var(--accent);
+  /* color: var(--accent); */
+  color: #fff;
 }
 
 .navlink-spacing-custom {
@@ -101,6 +102,8 @@ body {
 
 .project-tile:nth-of-type(even) {
   background: var(--accent);
+  background: var(--midtone);
+
   color: #000;
 }
 
