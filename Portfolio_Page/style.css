@@ -8,26 +8,38 @@ li {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 :root {
   /* height: 100vh; */
   --shadow: hsla(171, 27%, 15%, 1);
-  --midtone: hsla(53, 14%, 65%, 1);
-  --highlight: hsla(180, 11%, 52%, 1);
-  --accent: hsla(189, 19%, 41%, 1);
+  --midtone: hsla(180, 11%, 52%, 1);
+  --highlight: hsla(53, 14%, 65%, 1);
   --accent: hsla(189, 40%, 80%, 1);
+  /* --accent: hsla(189, 19%, 41%, 1); */
 }
 
 body {
-  position: relative;
+  /* position: relative; */
+  background: var(--shadow);
+  font-size: 18px;
 }
 
 /* NAVBAR */
-nav.fixed {
+#navbar {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 20;
   padding: 1rem;
+  /* color: var(--accent); */
+}
+
+#navbar a {
+  /* color: var(--accent); */
+  color: #fff;
 }
 
 .navlink-spacing-custom {
@@ -42,12 +54,12 @@ nav.fixed {
 
 /* padding for header-text container */
 .header-padding {
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 /* push elements in header-text container down */
 .header-margin {
-  margin-top: 25%;
+  margin-top: 0;
 }
 
 #welcome-section {
@@ -63,23 +75,62 @@ nav.fixed {
 }
 
 #welcome-section .header-text {
-  background: lightgray;
-  /* color: #fff; */
+  background: hsla(171, 27%, 15%, 1);
+  color: hsla(189, 40%, 80%, 1);
 }
 
 /* PROJECTS SECTION */
-#projects {
-  background: gray;
+.no-padding {
+  padding: 0;
 }
+
+#projects {
+  background: hsla(53deg, 8%, 85%, 1);
+  /* color: var(--highlight); */
+  color: var(--shadow);
+}
+
 .project-tile {
   padding: 1.5rem;
-  background: lightblue;
+}
+
+.project-tile:nth-of-type(odd) {
+  /* padding: 1.5rem; */
+  background: var(--midtone);
+  background: var(--highlight);
+}
+
+.project-tile:nth-of-type(even) {
+  background: var(--accent);
+  background: var(--midtone);
+
+  color: #000;
+}
+
+.project-tile a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--shadow);
+}
+
+.project-tile p {
+  /* top/bottom - left/right */
+  margin: 1.5rem 0;
 }
 /* card-image  */
 img {
   display: block;
 }
 
+/* FOOTER (Inherits background color from body element) */
+#footer {
+  color: var(--accent);
+  font-size: 1.2rem;
+}
+
 /* MEDIA QUERY */
 @media (min-width: 768px) {
+  .header-margin {
+    margin-top: 25%;
+  }
 }
