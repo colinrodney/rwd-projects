@@ -18,6 +18,7 @@ a {
   --midtone: hsla(180, 11%, 52%, 1);
   --highlight: hsla(53, 14%, 65%, 1);
   --accent: hsla(189, 40%, 80%, 1);
+  --light-text-color: hsla(0, 0%, 94%, 1);
   /* --accent: hsla(189, 19%, 41%, 1); */
 }
 
@@ -28,6 +29,7 @@ body {
 }
 
 /* NAVBAR */
+
 #navbar {
   position: fixed;
   top: 0;
@@ -94,30 +96,40 @@ body {
   padding: 1.5rem;
 }
 
-.project-tile:nth-of-type(odd) {
-  /* padding: 1.5rem; */
-  background: var(--midtone);
-  background: var(--highlight);
-}
-
-.project-tile:nth-of-type(even) {
-  background: var(--accent);
-  background: var(--midtone);
-
-  color: #000;
-}
-
+/* GLOBAL STYLES FOR PROJECT-TIE <a> */
 .project-tile a {
   text-decoration: none;
   font-size: 1.5rem;
+}
+
+/* STYLES: ODD # TILES */
+.project-tile:nth-of-type(odd) {
+  /* padding: 1.5rem; */
+  /* background: var(--midtone); */
+  background: var(--highlight);
+}
+
+.project-tile:nth-of-type(odd) a {
   color: var(--shadow);
+}
+
+/* STYLES: EVEN # TILES */
+.project-tile:nth-of-type(even) {
+  background: var(--accent);
+  background: var(--midtone);
+  color: var(--light-text-color);
+}
+
+.project-tile:nth-of-type(even) a {
+  color: var(--light-text-color);
 }
 
 .project-tile p {
   /* top/bottom - left/right */
   margin: 1.5rem 0;
 }
-/* card-image  */
+
+/* CARD-IMAGE  */
 img {
   display: block;
 }
